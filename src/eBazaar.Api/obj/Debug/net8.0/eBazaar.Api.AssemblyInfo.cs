@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eBazaar.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b80a42f8af3c13319ce0bc59c29a6a69813a755")]
 [assembly: System.Reflection.AssemblyProductAttribute("eBazaar.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eBazaar.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

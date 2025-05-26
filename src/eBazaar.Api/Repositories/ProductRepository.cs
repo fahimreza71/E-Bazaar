@@ -1,6 +1,7 @@
 ﻿using eBazaar.Api.Data;
 using eBazaar.Api.Interfaces;
 using eBazaar.Api.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace eBazaar.Api.Repositories
 {
@@ -11,39 +12,72 @@ namespace eBazaar.Api.Repositories
         {
             _context = context;
         }
-        Task<Product> IProductRepository.AddAsync(Product product)
+
+        public async Task<IEnumerable<Product>> GetAllAsync(int page = 1, int pageSize = 10)
         {
-            throw new NotImplementedException();
+            return await _context.Products
+                .OrderByDescending(p => p.CreatedAt)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
         }
 
-        Task IProductRepository.DeleteAsync(Guid id)
+        public async Task<Product?> GetByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await _context.Products.FindAsync(id);
         }
 
-        Task<IEnumerable<Product>> IProductRepository.GetAllAsync(int page, int pageSize)
+        public async Task<IEnumerable<Product>> SearchAsync(string searchTerm, int page = 1, int pageSize = 10)
         {
-            throw new NotImplementedException();
+            return await _context.Products
+                .Where(p => p.Name.Contains(searchTerm) || p.Description.Contains(searchTerm))
+                .OrderByDescending(p => p.CreatedAt)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
         }
 
-        Task<Product?> IProductRepository.GetByIdAsync(Guid id)
+        public async Task<Product> AddAsync(Product product)
         {
-            throw new NotImplementedException();
+            product.CreatedAt = DateTime.UtcNow;
+            product.UpdatedAt = DateTime.UtcNow;
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+            return product;
         }
 
-        Task<int> IProductRepository.GetTotalCountAsync()
+        public async Task<Product> UpdateAsync(Product product)
         {
-            throw new NotImplementedException();
+            var existingProduct = await _context.Products.FindAsync(product.Id);
+            if (existingProduct == null)
+                throw new ArgumentException("Product not found");
+
+            existingProduct.Name = product.Name;
+            existingProduct.Description = product.Description;
+            existingProduct.Price = product.Price;
+            existingProduct.DiscountPercentage = product.DiscountPercentage;
+            existingProduct.DiscountStartDate = product.DiscountStartDate;
+            existingProduct.DiscountEndDate = product.DiscountEndDate;
+            existingProduct.ImageUrl = product.ImageUrl;
+            existingProduct.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return existingProduct;
         }
 
-        Task<IEnumerable<Product>> IProductRepository.SearchAsync(string searchTerm, int page, int pageSize)
+        public async Task DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var product = await _context.Products.FindAsync(id);
+            if (product != null)
+            {
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+            }
         }
 
-        Task<Product> IProductRepository.UpdateAsync(Product product)
+        public async Task<int> GetTotalCountAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Products.CountAsync();
         }
     }
 }
