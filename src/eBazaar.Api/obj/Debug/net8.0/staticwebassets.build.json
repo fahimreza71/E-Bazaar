@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "48bnadkulD24Kb2Q7a6BX34Ef8UKBYnwXfO5jOjZW0Y=",
+  "Source": "eBazaar.Api",
+  "BasePath": "_content/eBazaar.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
