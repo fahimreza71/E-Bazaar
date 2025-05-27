@@ -548,6 +548,10 @@
             "type": "number",
             "format": "double"
           },
+          "stockQuantity": {
+            "type": "integer",
+            "format": "int32"
+          },
           "discountPercentage": {
             "type": "number",
             "format": "double",

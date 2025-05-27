@@ -39,6 +39,7 @@ namespace eBazaar.Api.Repositories
 
         public async Task<Product> AddAsync(Product product)
         {
+            product.Id = Guid.NewGuid();
             product.CreatedAt = DateTime.UtcNow;
             product.UpdatedAt = DateTime.UtcNow;
             _context.Products.Add(product);
