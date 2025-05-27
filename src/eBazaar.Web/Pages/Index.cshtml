@@ -4,7 +4,67 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center container mx-auto p-4">
+    <h1 class="display-4 text-3xl font-bold text-custom-blue">Welcome to eBazaar</h1>
+    <p class="text-custom-gray">Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div class="card w-96 shadow-sm">
+    <div class="bg-custom-light rounded-box">
+        <figure>
+            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                 alt="Shoes" />
+        </figure>
+        <div class="card-body">
+            <h2 class="card-title text-custom-dark">Card Title</h2>
+            <p class="text-custom-gray">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-outline btn-info">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Color Demonstration Section -->
+<div class="space-y-4 p-8 bg-custom-lightest mt-8 rounded-lg">
+    <h2 class="text-2xl font-bold text-custom-dark mb-6">Color Palette Demo</h2>
+
+    <!-- Background Colors -->
+    <div class="grid gap-4">
+        <div class="p-4 bg-custom-blue text-white rounded">Primary Blue (#2F80ED)</div>
+        <div class="p-4 bg-custom-dark text-white rounded">Dark (#252C32)</div>
+        <div class="p-4 bg-custom-light text-custom-dark rounded">Light (#E5E9EB)</div>
+        <div class="p-4 bg-custom-lighter text-custom-dark rounded">Lighter (#F8FBFF)</div>
+        <div class="p-4 bg-custom-lightest text-custom-dark rounded">Lightest (#F7F7F7)</div>
+        <div class="p-4 bg-custom-gray text-white rounded">Gray (#777777)</div>
+        <div class="p-4 bg-custom-blue-light text-white rounded">Blue Light (#2568C1)</div>
+    </div>
+
+    <!-- Border Examples -->
+    <div class="grid gap-4 mt-6">
+        <div class="p-4 border-2 border-custom-blue bg-white text-custom-dark rounded">Blue Border</div>
+        <div class="p-4 border-2 border-custom-dark bg-white text-custom-dark rounded">Dark Border</div>
+        <div class="p-4 border-2 border-custom-gray bg-white text-custom-dark rounded">Gray Border</div>
+    </div>
+
+    <!-- Text Colors -->
+    <div class="grid gap-4 mt-6 bg-white p-4 rounded">
+        <p class="text-custom-blue">Text in Custom Blue</p>
+        <p class="text-custom-dark">Text in Custom Dark</p>
+        <p class="text-custom-gray">Text in Custom Gray</p>
+    </div>
+
+    <!-- Button Examples -->
+    <div class="flex gap-4 mt-6 flex-wrap">
+        <button class="btn bg-custom-blue text-white hover:bg-custom-blue-light">Primary Button</button>
+        <button class="btn bg-custom-dark text-white hover:bg-opacity-90">Dark Button</button>
+        <button class="btn bg-custom-light text-custom-dark hover:bg-custom-blue hover:text-white">Light Button</button>
+        <button class="btn border-2 border-custom-blue text-custom-blue hover:bg-custom-blue hover:text-white">Outlined Button</button>
+    </div>
+</div>
+
+
+
+
+
+

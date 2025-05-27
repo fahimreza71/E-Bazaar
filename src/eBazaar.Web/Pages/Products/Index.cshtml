@@ -1,0 +1,122 @@
+﻿@page
+@model eBazaar.Web.Pages.Products.IndexModel
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="w-full bg-gray-50">
+    <!-- Header Section -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-3xl font-bold text-custom-dark">Our Products</h1>
+            <div class="flex gap-4 items-center">
+                <div class="form-control">
+                    <div class="input-group">
+                        <input type="text" asp-for="SearchQuery" placeholder="Search products..."
+                               class="input input-bordered w-64" />
+                        <button class="btn btn-outline btn-info" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            @foreach (var product in Model.Products)
+            {
+                <div class="card bg-custom-lighter hover:shadow-xl transition-all duration-300 border border-custom-light hover:border-custom-blue">
+                    <figure class="px-4 pt-4">
+                        <img src="@(string.IsNullOrEmpty(product.ImageUrl) ? "/images/placeholder.png" : product.ImageUrl)"
+                             alt="@product.Name"
+                             class="rounded-xl h-48 w-full object-cover" />
+                    </figure>
+                    <div class="card-body p-4">
+                        <h2 class="card-title text-custom-dark text-lg font-semibold">@product.Name</h2>
+                        <p class="text-custom-gray text-sm line-clamp-2">@product.Description</p>
+                        <div class="flex justify-between items-center mt-4">
+                            @if (product.DiscountPercentage.HasValue)
+                            {
+                                <div class="flex flex-col">
+                                    <span class="text-xl font-bold text-custom-blue">$@product.GetCurrentPrice().ToString("F2")</span>
+                                    <span class="text-sm text-custom-gray line-through">$@product.Price.ToString("F2")</span>
+                                </div>
+                            }
+                            else
+                            {
+                                <span class="text-xl font-bold text-custom-dark">$@product.Price.ToString("F2")</span>
+                            }
+                            <div class="card-actions">
+                                <button class="btn btn-sm bg-custom-blue text-white hover:bg-custom-blue-light border-none"
+                                        onclick="addToCart('@product.Id')">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                        @if (product.StockQuantity < 10)
+                        {
+                            <div class="badge badge-warning gap-2 mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-4 h-4 stroke-current">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg>
+                                Only @product.StockQuantity left!
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Pagination -->
+        @if (Model.TotalPages > 1)
+        {
+            <div class="flex justify-center space-x-2 mt-8">
+                @if (Model.CurrentPage > 1)
+                {
+                    <a href="/Products?page=@(Model.CurrentPage - 1)&pageSize=@Model.PageSize"
+                       class="btn btn-outline text-custom-blue hover:bg-custom-blue hover:text-white">Previous</a>
+                }
+
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                    <a href="/Products?page=@i&pageSize=@Model.PageSize"
+                       class="btn @(i == Model.CurrentPage ? "bg-custom-blue text-white border-custom-blue" : "btn-outline text-custom-blue hover:bg-custom-blue hover:text-white")">@i</a>
+                }
+
+                @if (Model.CurrentPage < Model.TotalPages)
+                {
+                    <a href="/Products?page=@(Model.CurrentPage + 1)&pageSize=@Model.PageSize"
+                       class="btn btn-outline text-custom-blue hover:bg-custom-blue hover:text-white">Next</a>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        async function addToCart(productId) {
+            try {
+                const response = await fetch('/api/Cart', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        productId: productId,
+                        quantity: 1
+                    })
+                });
+
+                if (response.ok) {
+                    // Show success toast
+                    alert('Product added to cart!');
+                } else {
+                    throw new Error('Failed to add to cart');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to add product to cart');
+            }
+        }
+    </script>
+}

@@ -1,0 +1,9 @@
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Projects\eBazaar\src\eBazaar.Api\obj\Debug\net8.0\staticwebassets.build.json

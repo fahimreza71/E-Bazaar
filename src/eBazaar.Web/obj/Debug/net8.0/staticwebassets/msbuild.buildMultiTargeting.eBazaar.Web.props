@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\eBazaar.Web.props" />
+</Project>

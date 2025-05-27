@@ -1,7 +1,17 @@
+using eBazaar.Web.Services;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+// Register HttpClient
+builder.Services.AddHttpClient();
+
+// Register API Services
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<CartService>();
 
 var app = builder.Build();
 
