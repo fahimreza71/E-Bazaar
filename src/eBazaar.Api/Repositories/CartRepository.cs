@@ -32,6 +32,8 @@ namespace eBazaar.Api.Repositories
         public async Task<Cart> AddToCartAsync(Cart cart)
         {
             var existingItem = await GetCartItemAsync(cart.UserId, cart.ProductId);
+            cart.Id = Guid.NewGuid();
+            cart.Product = await _context.Products.FirstOrDefaultAsync(c => c.Id == cart.ProductId);
             if (existingItem != null)
             {
                 existingItem.Quantity += cart.Quantity;

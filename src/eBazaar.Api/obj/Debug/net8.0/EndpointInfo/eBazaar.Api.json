@@ -578,6 +578,10 @@
           "updatedAt": {
             "type": "string",
             "format": "date-time"
+          },
+          "slug": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

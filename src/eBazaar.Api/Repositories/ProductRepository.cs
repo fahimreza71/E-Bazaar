@@ -40,11 +40,26 @@ namespace eBazaar.Api.Repositories
         public async Task<Product> AddAsync(Product product)
         {
             product.Id = Guid.NewGuid();
+            product.Slug = GenerateSlug(product.Name);
             product.CreatedAt = DateTime.UtcNow;
             product.UpdatedAt = DateTime.UtcNow;
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
             return product;
+        }
+
+        public static string GenerateSlug(string name)
+        {
+            return name.ToLower()
+                .Replace(" ", "-")
+                .Replace(".", "")
+                .Replace(",", "")
+                .Replace("&", "and")
+                .Replace("'", "")
+                .Replace("\"", "")
+                .Replace("(", "")
+                .Replace(")", "")
+                .Trim();
         }
 
         public async Task<Product> UpdateAsync(Product product)
@@ -56,6 +71,7 @@ namespace eBazaar.Api.Repositories
             existingProduct.Name = product.Name;
             existingProduct.Description = product.Description;
             existingProduct.Price = product.Price;
+            existingProduct.Slug = GenerateSlug(product.Name);
             existingProduct.DiscountPercentage = product.DiscountPercentage;
             existingProduct.DiscountStartDate = product.DiscountStartDate;
             existingProduct.DiscountEndDate = product.DiscountEndDate;
