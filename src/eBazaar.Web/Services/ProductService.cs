@@ -67,7 +67,6 @@ namespace eBazaar.Web.Services
                 if (int.TryParse(values.FirstOrDefault(), out int totalCount))
                     return totalCount;
             }
-
             return 0;
         }
     }

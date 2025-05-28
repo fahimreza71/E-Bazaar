@@ -1,0 +1,125 @@
+﻿@{
+    var cartItems = new List<dynamic>(); // This will be replaced with actual cart items
+}
+
+<dialog id="cart_modal" class="modal bg-custom-gray">
+    <div class="modal-box w-11/12 max-w-3xl">
+        <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
+        <h3 class="font-bold text-lg mb-4">Shopping Cart</h3>
+
+        @if (cartItems.Any())
+        {
+            <div class="overflow-x-auto">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in cartItems)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="flex items-center gap-3">
+                                        <div class="avatar">
+                                            <div class="w-12 h-12">
+                                                <img src="@item.ImageUrl" alt="@item.Name" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="font-bold">@item.Name</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$@item.Price</td>
+                                <td>
+                                    <div class="flex items-center gap-2">
+                                        <button class="btn btn-xs btn-circle" onclick="updateQuantity('@item.Id', -1)">-</button>
+                                        <span>@item.Quantity</span>
+                                        <button class="btn btn-xs btn-circle" onclick="updateQuantity('@item.Id', 1)">+</button>
+                                    </div>
+                                </td>
+                                <td>$@(item.Price * item.Quantity)</td>
+                                <td>
+                                    <button class="btn btn-ghost btn-xs" onclick="removeItem('@item.Id')">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between items-center mt-6">
+                <div class="text-lg font-semibold">
+                    Total: $@cartItems.Sum(item => item.Price * item.Quantity)
+                </div>
+                <div class="flex gap-2">
+                    <button class="btn btn-outline" onclick="document.getElementById('cart_modal').close()">Continue Shopping</button>
+                    <button class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-8">
+                <div class="text-4xl mb-4">🛒</div>
+                <p class="text-lg mb-4">Your cart is empty</p>
+                <button class="btn btn-primary" onclick="document.getElementById('cart_modal').close()">Continue Shopping</button>
+            </div>
+        }
+    </div>
+</dialog>
+
+<script>
+    async function updateQuantity(itemId, change) {
+        try {
+            const response = await fetch('/api/Cart', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    productId: itemId,
+                    quantity: change
+                })
+            });
+
+            if (response.ok) {
+                location.reload();
+            } else {
+                throw new Error('Failed to update quantity');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Failed to update quantity');
+        }
+    }
+
+    async function removeItem(itemId) {
+        try {
+            const response = await fetch(`/api/Cart/${itemId}`, {
+                method: 'DELETE',
+            });
+
+            if (response.ok) {
+                location.reload();
+            } else {
+                throw new Error('Failed to remove item');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Failed to remove item');
+        }
+    }
+</script> 

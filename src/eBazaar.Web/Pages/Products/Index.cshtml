@@ -1,23 +1,24 @@
 ﻿@page
+@using eBazaar.Api.Models
 @model eBazaar.Web.Pages.Products.IndexModel
 @{
     ViewData["Title"] = "Products";
 }
 
-<div class="w-full bg-gray-50">
+<div class="w-full">
     <!-- Header Section -->
     <div class="max-w-7xl mx-auto px-4 py-8">
         <div class="flex justify-between items-center mb-8">
-            <h1 class="text-3xl font-bold text-custom-dark">Our Products</h1>
             <div class="flex gap-4 items-center">
                 <div class="form-control">
                     <div class="input-group">
                         <input type="text" asp-for="SearchQuery" placeholder="Search products..."
-                               class="input input-bordered w-64" />
+                        class="input input-bordered w-96 p-4 border-2 border-custom-blue bg-white text-custom-dark rounded" />
                         <button class="btn btn-outline btn-info" type="submit">Search</button>
                     </div>
                 </div>
             </div>
+            <button class="btn btn-outline btn-info" onclick="document.getElementById('add_product_modal').showModal()">Add Product</button>
         </div>
 
         <!-- Products Grid -->
@@ -27,31 +28,12 @@
                 <div class="card bg-custom-lighter hover:shadow-xl transition-all duration-300 border border-custom-light hover:border-custom-blue">
                     <figure class="px-4 pt-4">
                         <img src="@(string.IsNullOrEmpty(product.ImageUrl) ? "/images/placeholder.png" : product.ImageUrl)"
-                             alt="@product.Name"
-                             class="rounded-xl h-48 w-full object-cover" />
+                        alt="@product.Name"
+                        class="rounded-xl h-48 w-full object-cover" />
                     </figure>
                     <div class="card-body p-4">
                         <h2 class="card-title text-custom-dark text-lg font-semibold">@product.Name</h2>
                         <p class="text-custom-gray text-sm line-clamp-2">@product.Description</p>
-                        <div class="flex justify-between items-center mt-4">
-                            @if (product.DiscountPercentage.HasValue)
-                            {
-                                <div class="flex flex-col">
-                                    <span class="text-xl font-bold text-custom-blue">$@product.GetCurrentPrice().ToString("F2")</span>
-                                    <span class="text-sm text-custom-gray line-through">$@product.Price.ToString("F2")</span>
-                                </div>
-                            }
-                            else
-                            {
-                                <span class="text-xl font-bold text-custom-dark">$@product.Price.ToString("F2")</span>
-                            }
-                            <div class="card-actions">
-                                <button class="btn btn-sm bg-custom-blue text-white hover:bg-custom-blue-light border-none"
-                                        onclick="addToCart('@product.Id')">
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
                         @if (product.StockQuantity < 10)
                         {
                             <div class="badge badge-warning gap-2 mt-2">
@@ -61,6 +43,28 @@
                                 Only @product.StockQuantity left!
                             </div>
                         }
+                        <div class="flex justify-between items-center mt-4">
+                            @if (product.DiscountPercentage > 0)
+                            {
+                                <div class="flex flex-col">
+                                    <span class="text-xl font-bold text-custom-dark">$@product.GetCurrentPrice().ToString("F2")</span>
+                                    @if(product.GetCurrentPrice() != product.Price)
+                                    {
+                                        <span class="text-sm text-custom-gray line-through">$@product.Price.ToString("F2")</span>
+                                    }
+                                </div>
+                            }
+                            else
+                            {
+                                <span class="text-xl font-bold text-custom-dark">$@product.Price.ToString("F2")</span>
+                            }
+                            <div class="card-actions">
+                                <button class="btn btn-sm bg-custom-blue text-white hover:bg-custom-blue-light border-none"
+                                onclick="addToCart('@product.Id')">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             }
@@ -92,31 +96,9 @@
     </div>
 </div>
 
-@section Scripts {
-    <script>
-        async function addToCart(productId) {
-            try {
-                const response = await fetch('/api/Cart', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        productId: productId,
-                        quantity: 1
-                    })
-                });
+<partial name="_AddProductModal" model="new Product()" />
 
-                if (response.ok) {
-                    // Show success toast
-                    alert('Product added to cart!');
-                } else {
-                    throw new Error('Failed to add to cart');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Failed to add product to cart');
-            }
-        }
-    </script>
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 }
