@@ -23,10 +23,17 @@ namespace eBazaar.Web.Pages.Products
         public int CurrentPage { get; set; } = 1;
 
         [BindProperty(SupportsGet = true)]
-        public int PageSize { get; set; } = 12;
+        public int PageSize { get; set; } = 8;
 
         public IEnumerable<Product> Products { get; private set; } = Array.Empty<Product>();
+        public IEnumerable<Cart> CartItems { get; set; } = Array.Empty<Cart>();
         public int TotalPages { get; private set; }
+
+        public async Task<IActionResult> OnPostAddProductAsync(Product product)
+        {
+            await _productService.CreateProductAsync(product);
+            return RedirectToPage();
+        }
 
         public async Task OnGetAsync()
         {
@@ -40,8 +47,11 @@ namespace eBazaar.Web.Pages.Products
             }
 
             var totalCount = await _productService.GetTotalCountAsync();
-            //TotalPages = (int)Math.Ceiling(totalCount / (double)PageSize);
-            TotalPages = 5;
+            TotalPages = (int)Math.Ceiling(totalCount / (double)PageSize);
+
+            //Cart functionality
+            Guid userId = Guid.Parse("3FA85F64-5717-4562-B3FC-2C963F66AFA6");
+            CartItems = await _cartService.GetUserCartAsync(userId);
         }
     }
 }

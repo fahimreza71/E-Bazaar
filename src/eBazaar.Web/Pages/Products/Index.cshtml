@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-outline btn-info" onclick="document.getElementById('add_product_modal').showModal()">Add Product</button>
+            <button class="btn btn-outline btn-info" onclick="document.getElementById('AddProduct_modal').showModal()">Add Product</button>
         </div>
 
         <!-- Products Grid -->
@@ -95,6 +95,8 @@
         }
     </div>
 </div>
+
+@await Html.PartialAsync("Shared/_CartModal", Model.CartItems)
 
 <partial name="_AddProductModal" model="new Product()" />
 

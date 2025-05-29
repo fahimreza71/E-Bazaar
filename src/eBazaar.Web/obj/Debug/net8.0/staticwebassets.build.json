@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Gm/YmhSSHTHjncMmV54pcfaEXVvlJIiaSQMGXDPgFhU=",
+  "Hash": "ZLUVn97eIok2qKCK/VbDcMMq+I1JORZwVz7RPIIYOno=",
   "Source": "eBazaar.Web",
   "BasePath": "_content/eBazaar.Web",
   "Mode": "Default",
@@ -2385,7 +2385,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 28 May 2025 14:51:43 GMT"
+          "Value": "Thu, 29 May 2025 05:02:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2430,7 +2430,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 28 May 2025 14:51:43 GMT"
+          "Value": "Thu, 29 May 2025 05:02:46 GMT"
         },
         {
           "Name": "Cache-Control",

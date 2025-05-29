@@ -1,8 +1,8 @@
 ﻿@model eBazaar.Api.Models.Product
 
-<dialog id="add_product_modal" class="modal">
+<dialog id="AddProduct_modal" class="modal">
     <div class="modal-box w-auto max-w-2xl bg-custom-lightest p-8 rounded-lg shadow-lg">
-        <form method="post" id="addProductForm" class="space-y-6">
+        <form method="post" id="addProductForm" class="space-y-6" asp-page-handler="AddProduct">
 
             <!-- Header -->
             <div class="flex justify-between items-center">
@@ -88,38 +88,6 @@
 
 <script>
     function closeAddProductModal() {
-        document.getElementById('add_product_modal').close();
+        document.getElementById('AddProduct_modal').close();
     }
-
-    document.getElementById('addProductForm').addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        console.log("Add product submitted !")
-
-        const formData = new FormData(this);
-        const product = {
-            name: formData.get('Name'),
-            description: formData.get('Description'),
-            price: parseFloat(formData.get('Price')),
-            stockQuantity: parseInt(formData.get('StockQuantity')),
-            discountPercentage: formData.get('DiscountPercentage') ? parseFloat(formData.get('DiscountPercentage')) : null,
-            discountStart: formData.get('DiscountStart') || null,
-            discountEnd: formData.get('DiscountEnd') || null
-        };
-
-        console.log('Sending product details:', product);
-
-        try {
-            const response = await addProduct(product);
-
-            if (response.ok) {
-                window.location.reload();
-            } else {
-                const error = await response.text();
-                alert('Error adding product: ' + error);
-            }
-        } catch (error) {
-            alert('Error adding product: ' + error.message);
-        }
-    });
 </script> 
