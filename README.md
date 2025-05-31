@@ -8,7 +8,8 @@ A full-stack e-commerce application built with .NET 8.0, featuring product manag
 - **Frontend**: .NET Core Razor Pages with Tailwind CSS
 - **Backend**: ASP.NET Core Web API
 - **Database**: MSSQL Server
-- **Documentation**: Swagger/OpenAPI
+- **ORM**: Entity Framework Core
+- **API Documentation**: Swagger/OpenAPI
 - **Framework**: .NET 8.0
 
 ## Features
@@ -36,7 +37,7 @@ eBazaar/
 │   │   │   │   ├── Detail.cshtml      # Product details page
 │   │   │   ├── Cart/
 │   │   │   │   ├── Index.cshtml       # Cart view
-│   │   ├── Models/                    # Shared models
+│   │   ├── Models/                    # Shared models (Not implemented yet)
 │   │   ├── Services/                  # API call services
 │   │   └── appsettings.json
 │   │
@@ -60,16 +61,35 @@ eBazaar/
 │
 └── README.md
 ```
+## Setup Instructions
 
-## Getting Started
+### Prerequisites
+1. .NET 8.0 SDK
+2. SQL Server 2019 or later
+3. Node.js (for Tailwind CSS)
+4. Visual Studio 2022 or VS Code
 
-1. Clone the repository
-2. Ensure .NET 8.0 SDK is installed
-3. Set up the database
-4. Run the API project
-5. Run the Web project
+### Clone this repository
+```bash
+   git clone https://github.com/fahimreza71/E-Bazaar.git
+```
 
-## Development Setup
+### Database Setup
+1. Update connection string in `appsettings.json`:
+   ```json
+   {
+     "ConnectionStrings": {
+       "DefaultConnection": "Server=.;Database=eBazaar;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true"
+     }
+   }
+   ```
+2. Run migrations:
+   ```bash
+   cd src/eBazaar.Api
+   dotnet ef database update
+   ```
+
+### Development Setup
 
 ```bash
 # Restore dependencies
@@ -84,22 +104,11 @@ cd src/eBazaar.Web
 dotnet run
 ```
 
-## Database Schemas
+### UI Preview  
+<div style="display: flex; justify-content: center;">
+  <img src="src/eBazaar.Web/wwwroot/images/ui/eBazaar-home.png" style="width: 30%; margin: 0 10px;" />
+  <img src="src/eBazaar.Web/wwwroot/images/ui/eBazaar-addProd.png" style="width: 30%; margin: 0 10px;" />
+  <img src="src/eBazaar.Web/wwwroot/images/ui/eBazaar-cart.png" style="width: 30%; margin: 0 10px;" />
+</div>
 
-### Product
-- Id
-- Name
-- Description
-- Price
-- DiscountPercentage
-- DiscountStartDate
-- DiscountEndDate
-- ImageUrl
-- CreatedAt
-- UpdatedAt
 
-### Cart
-- Id
-- UserId
-- ProductId
-- Quantity
