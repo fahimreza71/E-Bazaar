@@ -19,6 +19,9 @@ namespace eBazaar.Api.Controllers
         [HttpGet("{userId}")]
         public async Task<ActionResult<IEnumerable<Cart>>> GetUserCart(Guid userId)
         {
+            if (userId == Guid.Empty)
+                return BadRequest(new { message = "Invalid user ID" });
+
             var cartItems = await _cartRepository.GetUserCartAsync(userId);
             return Ok(cartItems);
         }
@@ -26,16 +29,37 @@ namespace eBazaar.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<Cart>> AddToCart(Cart cart)
         {
-            var addedItem = await _cartRepository.AddToCartAsync(cart);
-            return CreatedAtAction(nameof(GetCartItem), new { userId = cart.UserId, productId = cart.ProductId }, addedItem);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (cart.Quantity <= 0)
+                return BadRequest(new { message = "Quantity must be greater than 0" });
+
+            try
+            {
+                var addedItem = await _cartRepository.AddToCartAsync(cart);
+                return CreatedAtAction(nameof(GetCartItem),
+                    new { userId = cart.UserId, productId = cart.ProductId },
+                    addedItem);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpGet("{userId}/items/{productId}")]
         public async Task<ActionResult<Cart>> GetCartItem(Guid userId, Guid productId)
         {
+            if (userId == Guid.Empty)
+                return BadRequest(new { message = "Invalid user ID" });
+
+            if (productId == Guid.Empty)
+                return BadRequest(new { message = "Invalid product ID" });
+
             var cartItem = await _cartRepository.GetCartItemAsync(userId, productId);
             if (cartItem == null)
-                return NotFound();
+                return NotFound(new { message = "Cart item not found" });
 
             return Ok(cartItem);
         }
@@ -43,29 +67,58 @@ namespace eBazaar.Api.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateCartItem(Cart cart)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            if (cart.Quantity <= 0)
+                return BadRequest(new { message = "Quantity must be greater than 0" });
+
             try
             {
                 await _cartRepository.UpdateCartItemAsync(cart);
                 return NoContent();
             }
-            catch (ArgumentException)
+            catch (ArgumentException ex)
             {
-                return NotFound();
+                return NotFound(new { message = ex.Message });
             }
         }
 
         [HttpDelete("{userId}/items/{productId}")]
         public async Task<IActionResult> DeleteCartItem(Guid userId, Guid productId)
         {
-            await _cartRepository.DeleteCartItemAsync(userId, productId);
-            return NoContent();
+            if (userId == Guid.Empty)
+                return BadRequest(new { message = "Invalid user ID" });
+
+            if (productId == Guid.Empty)
+                return BadRequest(new { message = "Invalid product ID" });
+
+            try
+            {
+                await _cartRepository.DeleteCartItemAsync(userId, productId);
+                return NoContent();
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
         }
 
         [HttpDelete("{userId}")]
         public async Task<IActionResult> ClearCart(Guid userId)
         {
-            await _cartRepository.ClearCartAsync(userId);
-            return NoContent();
+            if (userId == Guid.Empty)
+                return BadRequest(new { message = "Invalid user ID" });
+
+            try
+            {
+                await _cartRepository.ClearCartAsync(userId);
+                return NoContent();
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
         }
     }
 }
