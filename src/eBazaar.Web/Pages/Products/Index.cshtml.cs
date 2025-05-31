@@ -2,6 +2,7 @@ using eBazaar.Api.Models;
 using eBazaar.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Linq;
 
 namespace eBazaar.Web.Pages.Products
 {
@@ -24,10 +25,10 @@ namespace eBazaar.Web.Pages.Products
 
         [BindProperty(SupportsGet = true)]
         public int PageSize { get; set; } = 8;
-
         public IEnumerable<Product> Products { get; private set; } = Array.Empty<Product>();
         public IEnumerable<Cart> CartItems { get; set; } = Array.Empty<Cart>();
         public int TotalPages { get; private set; }
+        public int TotalProductCount { get; set; }
 
         public async Task<IActionResult> OnPostAddProductAsync(Product product)
         {
@@ -45,6 +46,8 @@ namespace eBazaar.Web.Pages.Products
             {
                 Products = await _productService.GetProductsAsync(CurrentPage, PageSize);
             }
+
+            TotalProductCount = await _productService.GetTotalCountAsync();
 
             var totalCount = await _productService.GetTotalCountAsync();
             TotalPages = (int)Math.Ceiling(totalCount / (double)PageSize);

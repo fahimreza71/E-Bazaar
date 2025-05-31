@@ -39,14 +39,14 @@
                                 <td>$@item.Product?.Price</td>
                                 <td>
                                     <div class="flex items-center gap-2">
-                                        <button class="btn btn-xs btn-circle" onclick="updateQuantity('@item.Id', -1)">-</button>
-                                        <span>@item.Quantity</span>
-                                        <button class="btn btn-xs btn-circle" onclick="updateQuantity('@item.Id', 1)">+</button>
+                                        <button class="btn btn-xs btn-circle" onclick="updateQuantity('@item.Product?.Id', -1)">-</button>
+                                        <span id="qty-@item.Product?.Id">@item.Quantity</span>
+                                        <button class="btn btn-xs btn-circle" onclick="updateQuantity('@item.Product?.Id', 1)">+</button>
                                     </div>
                                 </td>
-                                <td>$@(item.Product?.Price * item.Quantity)</td>
+                                <td><span class="ml-auto">$<span id="total-@item.Product?.Id">@((item.Product?.GetCurrentPrice() ?? 0) * item.Quantity)</span></span></td>
                                 <td>
-                                    <button class="btn btn-ghost btn-xs" onclick="removeItem('@item.Id')">
+                                    <button class="btn btn-ghost btn-xs" onclick="removeItem('@item.Product?.Id')">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                         </svg>
@@ -60,7 +60,7 @@
 
             <div class="flex justify-between items-center mt-6">
                 <div class="text-lg font-semibold">
-                    Total: $@Model.Sum(item => item.Product?.Price * item.Quantity)
+                    Total: $<span id="grand-total">@Model.Sum(item => item.Product?.Price * item.Quantity)</span>
                 </div>
                 <div class="flex gap-2">
                     <button class="btn btn-outline" onclick="document.getElementById('cart_modal').close()">Continue Shopping</button>
@@ -78,46 +78,3 @@
         }
     </div>
 </dialog>
-
-<script>
-    async function updateQuantity(itemId, change) {
-        try {
-            const response = await fetch('/api/Cart', {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    productId: itemId,
-                    quantity: change
-                })
-            });
-
-            if (response.ok) {
-                location.reload();
-            } else {
-                throw new Error('Failed to update quantity');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Failed to update quantity');
-        }
-    }
-
-    async function removeItem(itemId) {
-        try {
-            const response = await fetch(`/api/Cart/${itemId}`, {
-                method: 'DELETE',
-            });
-
-            if (response.ok) {
-                location.reload();
-            } else {
-                throw new Error('Failed to remove item');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Failed to remove item');
-        }
-    }
-</script> 

@@ -1,28 +1,28 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/eBazaar.Web/css/site.aoi7365tpz.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"aoi7365tpz"},{"Name":"integrity","Value":"sha256-SqXfDdqOQutluj2KJWPcwnv8cBSnOOmKCT\u002BprQHHKBQ="},{"Name":"label","Value":"_content/eBazaar.Web/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"470"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SqXfDdqOQutluj2KJWPcwnv8cBSnOOmKCT\u002BprQHHKBQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 04:47:57 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/eBazaar.Web/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SqXfDdqOQutluj2KJWPcwnv8cBSnOOmKCT\u002BprQHHKBQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"470"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022SqXfDdqOQutluj2KJWPcwnv8cBSnOOmKCT\u002BprQHHKBQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 04:47:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-i\u002BcRbMeki313YGkJNK8OIG0LfWQlWaMVYTliJU7xeJw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"623"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022i\u002BcRbMeki313YGkJNK8OIG0LfWQlWaMVYTliJU7xeJw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 30 May 2025 15:37:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/eBazaar.Web/css/site.zakzydq1xo.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zakzydq1xo"},{"Name":"integrity","Value":"sha256-i\u002BcRbMeki313YGkJNK8OIG0LfWQlWaMVYTliJU7xeJw="},{"Name":"label","Value":"_content/eBazaar.Web/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"623"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022i\u002BcRbMeki313YGkJNK8OIG0LfWQlWaMVYTliJU7xeJw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 30 May 2025 15:37:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/eBazaar.Web/css/styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0VOWA67O0YFlU4P4c03PPJ/HNKxG8ZJRhfFmPw10GYs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"92093"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220VOWA67O0YFlU4P4c03PPJ/HNKxG8ZJRhfFmPw10GYs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 28 May 2025 14:07:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-m9Bm3hAimqqRY3cw4ZQPd/Y14vjtcp1yjFRnMqvzWUU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"118381"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022m9Bm3hAimqqRY3cw4ZQPd/Y14vjtcp1yjFRnMqvzWUU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 30 May 2025 15:38:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/eBazaar.Web/css/styles.paduxxh7ww.css">
+    <StaticWebAssetEndpoint Include="_content/eBazaar.Web/css/styles.di1bzsq7nx.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"paduxxh7ww"},{"Name":"integrity","Value":"sha256-0VOWA67O0YFlU4P4c03PPJ/HNKxG8ZJRhfFmPw10GYs="},{"Name":"label","Value":"_content/eBazaar.Web/css/styles.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"92093"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220VOWA67O0YFlU4P4c03PPJ/HNKxG8ZJRhfFmPw10GYs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 28 May 2025 14:07:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"di1bzsq7nx"},{"Name":"integrity","Value":"sha256-m9Bm3hAimqqRY3cw4ZQPd/Y14vjtcp1yjFRnMqvzWUU="},{"Name":"label","Value":"_content/eBazaar.Web/css/styles.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"118381"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022m9Bm3hAimqqRY3cw4ZQPd/Y14vjtcp1yjFRnMqvzWUU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 30 May 2025 15:38:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/eBazaar.Web/eBazaar.Web.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\eBazaar.Web.kxxupyxytk.bundle.scp.css'))</AssetFile>
@@ -108,17 +108,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z46i9hceaa"},{"Name":"integrity","Value":"sha256-bUN5Kjmrv/7uk1KKc22vKpZ4EtGVVSRcEzJWQvijXdo="},{"Name":"label","Value":"_content/eBazaar.Web/images/products/wallet.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5137"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022bUN5Kjmrv/7uk1KKc22vKpZ4EtGVVSRcEzJWQvijXdo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 09:06:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/eBazaar.Web/js/site.hs9hwltlc6.js">
+    <StaticWebAssetEndpoint Include="_content/eBazaar.Web/js/site.51srjb989e.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hs9hwltlc6"},{"Name":"integrity","Value":"sha256-LxAM1c92wcmBxn8hJsrQ\u002Bwq9XKHLVYYZP\u002Bsr64CvtD0="},{"Name":"label","Value":"_content/eBazaar.Web/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4887"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022LxAM1c92wcmBxn8hJsrQ\u002Bwq9XKHLVYYZP\u002Bsr64CvtD0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 29 May 2025 05:02:46 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"51srjb989e"},{"Name":"integrity","Value":"sha256-V6p1eQz5gd\u002BgZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc="},{"Name":"label","Value":"_content/eBazaar.Web/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5487"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022V6p1eQz5gd\u002BgZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 30 May 2025 11:12:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/eBazaar.Web/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LxAM1c92wcmBxn8hJsrQ\u002Bwq9XKHLVYYZP\u002Bsr64CvtD0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4887"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022LxAM1c92wcmBxn8hJsrQ\u002Bwq9XKHLVYYZP\u002Bsr64CvtD0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 29 May 2025 05:02:46 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-V6p1eQz5gd\u002BgZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5487"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022V6p1eQz5gd\u002BgZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 30 May 2025 11:12:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/eBazaar.Web/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
