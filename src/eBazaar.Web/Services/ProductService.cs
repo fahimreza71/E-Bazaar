@@ -21,16 +21,6 @@ namespace eBazaar.Web.Services
             return await response.Content.ReadFromJsonAsync<IEnumerable<Product>>() ?? Array.Empty<Product>();
         }
 
-        public async Task<Product?> GetProductAsync(Guid id)
-        {
-            var response = await _httpClient.GetAsync($"api/Product/{id}");
-            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
-                return null;
-
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadFromJsonAsync<Product>();
-        }
-
         public async Task<IEnumerable<Product>> SearchProductsAsync(string query, int page = 1, int pageSize = 10)
         {
             var response = await _httpClient.GetAsync($"api/Product/search?query={Uri.EscapeDataString(query)}&page={page}&pageSize={pageSize}");
@@ -45,18 +35,6 @@ namespace eBazaar.Web.Services
             return await response.Content.ReadFromJsonAsync<Product>() ?? throw new InvalidOperationException("Failed to create product");
         }
 
-        public async Task UpdateProductAsync(Guid id, Product product)
-        {
-            var response = await _httpClient.PutAsJsonAsync($"api/Product/{id}", product);
-            response.EnsureSuccessStatusCode();
-        }
-
-        public async Task DeleteProductAsync(Guid id)
-        {
-            var response = await _httpClient.DeleteAsync($"api/Product/{id}");
-            response.EnsureSuccessStatusCode();
-        }
-
         public async Task<int> GetTotalCountAsync()
         {
             var response = await _httpClient.GetAsync("api/Product");
@@ -68,6 +46,27 @@ namespace eBazaar.Web.Services
                     return totalCount;
             }
             return 0;
+        }
+
+        // Not Implemented Yet
+        public async Task<Product?> GetProductAsync(Guid id)
+        {
+            var response = await _httpClient.GetAsync($"api/Product/{id}");
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                return null;
+
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<Product>();
+        }
+        public async Task DeleteProductAsync(Guid id)
+        {
+            var response = await _httpClient.DeleteAsync($"api/Product/{id}");
+            response.EnsureSuccessStatusCode();
+        }
+        public async Task UpdateProductAsync(Guid id, Product product)
+        {
+            var response = await _httpClient.PutAsJsonAsync($"api/Product/{id}", product);
+            response.EnsureSuccessStatusCode();
         }
     }
 }

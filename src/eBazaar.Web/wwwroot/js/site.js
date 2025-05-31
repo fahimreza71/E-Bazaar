@@ -169,7 +169,6 @@ async function openCart() {
     document.getElementById('cart_modal').showModal();
 }
 
-
 // Initialize cart and modal on page load
 document.addEventListener('DOMContentLoaded', () => {
     loadCart();

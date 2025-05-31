@@ -21,6 +21,7 @@ namespace eBazaar.Web.Services
             return await response.Content.ReadFromJsonAsync<IEnumerable<Cart>>() ?? Array.Empty<Cart>();
         }
 
+        // Not used yet, Most of them implemented in site.js
         public async Task<Cart> AddToCartAsync(Cart cart)
         {
             var response = await _httpClient.PostAsJsonAsync("api/Cart", cart);

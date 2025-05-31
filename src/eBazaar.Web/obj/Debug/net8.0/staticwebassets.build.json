@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L3t5kvr1mVSKjxuExtrk3bZox6wbrAUVfRdYtBg+cgo=",
+  "Hash": "yzx2UB1N0zyo8u135f0AMnbC/9of3fWzDv/eVtI7u10=",
   "Source": "eBazaar.Web",
   "BasePath": "_content/eBazaar.Web",
   "Mode": "Default",
@@ -134,12 +134,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\coffeemaker.jpg",
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product1.jpg",
       "SourceId": "eBazaar.Web",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
       "BasePath": "_content/eBazaar.Web",
-      "RelativePath": "images/products/coffeemaker#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/products/product1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -148,19 +148,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "udhrqim7q3",
-      "Integrity": "Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=",
+      "Fingerprint": "xmz6kx96du",
+      "Integrity": "6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\coffeemaker.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\products\\product1.jpg"
     },
     {
-      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\headphones.jpg",
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product10.jpg",
       "SourceId": "eBazaar.Web",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
       "BasePath": "_content/eBazaar.Web",
-      "RelativePath": "images/products/headphones#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/products/product10#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -169,19 +169,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "udhrqim7q3",
-      "Integrity": "Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=",
+      "Fingerprint": "7l68cncc2c",
+      "Integrity": "W9tfDjZnwhQnAnM6X40Jaf7vfP+GJB5G7Wf++n1g5aU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\headphones.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\products\\product10.jpg"
     },
     {
-      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\powerbank.jpg",
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product11.jpg",
       "SourceId": "eBazaar.Web",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
       "BasePath": "_content/eBazaar.Web",
-      "RelativePath": "images/products/powerbank#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/products/product11#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -190,19 +190,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "udhrqim7q3",
-      "Integrity": "Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=",
+      "Fingerprint": "xmz6kx96du",
+      "Integrity": "6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\powerbank.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\products\\product11.jpg"
     },
     {
-      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\smartwatch.jpg",
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product12.jpg",
       "SourceId": "eBazaar.Web",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
       "BasePath": "_content/eBazaar.Web",
-      "RelativePath": "images/products/smartwatch#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/products/product12#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -211,19 +211,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "udhrqim7q3",
-      "Integrity": "Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=",
+      "Fingerprint": "pud64wznix",
+      "Integrity": "X4CDUA0atlyZfg2o17HGy87SxCfYcCVRxFVuzuJcFB4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\smartwatch.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\products\\product12.jpg"
     },
     {
-      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\wallet.jpg",
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product13.jpg",
       "SourceId": "eBazaar.Web",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
       "BasePath": "_content/eBazaar.Web",
-      "RelativePath": "images/products/wallet#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/products/product13#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -232,11 +232,158 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z46i9hceaa",
-      "Integrity": "bUN5Kjmrv/7uk1KKc22vKpZ4EtGVVSRcEzJWQvijXdo=",
+      "Fingerprint": "nqxuostzc5",
+      "Integrity": "T54OUjSI0Tle0SAMKqjDvRsuqm5Lo7UuLauveaQxqCA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\products\\wallet.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\products\\product13.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product2.jpg",
+      "SourceId": "eBazaar.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
+      "BasePath": "_content/eBazaar.Web",
+      "RelativePath": "images/products/product2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "59a18e7c2v",
+      "Integrity": "KVpliVAEk3QY+YjYSt3Dck8T0u0OL7iAgOcb0EDKmSM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\product2.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product3.jpg",
+      "SourceId": "eBazaar.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
+      "BasePath": "_content/eBazaar.Web",
+      "RelativePath": "images/products/product3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l2nc9s6v7g",
+      "Integrity": "zbjkLzoPw1l36ddg7VPNWq1bEVGXTwfivRwfPxdMtTI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\product3.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product4.jpg",
+      "SourceId": "eBazaar.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
+      "BasePath": "_content/eBazaar.Web",
+      "RelativePath": "images/products/product4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2jjwq04i66",
+      "Integrity": "3kR8cLrTuz1/hk5dfjNc96YOqaoN8CbP9aHvGLLhmLY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\product4.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product5.jpg",
+      "SourceId": "eBazaar.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
+      "BasePath": "_content/eBazaar.Web",
+      "RelativePath": "images/products/product5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qeow602ly3",
+      "Integrity": "kmmIA8vkzUsIEPfh2pyYXjhBLVuoLZtw+dw8JthSicw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\product5.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product6.jpg",
+      "SourceId": "eBazaar.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
+      "BasePath": "_content/eBazaar.Web",
+      "RelativePath": "images/products/product6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b7n7i5pfwd",
+      "Integrity": "ybg1/Tw7D3CXFXZCHbPTo+CXMVYyA0YmPSrJUr4U+yA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\product6.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product8.jpg",
+      "SourceId": "eBazaar.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
+      "BasePath": "_content/eBazaar.Web",
+      "RelativePath": "images/products/product8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9dg8b22zok",
+      "Integrity": "I+hhWZpi2KP5jPMcoHtMx5CQjPH8JaTA+6/CYNCtK7g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\product8.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product9.jpg",
+      "SourceId": "eBazaar.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\",
+      "BasePath": "_content/eBazaar.Web",
+      "RelativePath": "images/products/product9#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yiyag3jw4a",
+      "Integrity": "tgYMxtv7whH6QEG8G4PTVXMNAPHxYKbpMl2t9wZcjQo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\product9.jpg"
     },
     {
       "Identity": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\js\\site.js",
@@ -253,8 +400,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "51srjb989e",
-      "Integrity": "V6p1eQz5gd+gZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc=",
+      "Fingerprint": "cxi3454vo2",
+      "Integrity": "cMU7sxtmbVbJTkcBGl9tWvwCTnZ3lvo/3MdZLjxat0Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1647,7 +1794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 15:38:40 GMT"
+          "Value": "Sat, 31 May 2025 06:47:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1684,7 +1831,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 15:38:40 GMT"
+          "Value": "Sat, 31 May 2025 06:47:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1953,8 +2100,8 @@
       ]
     },
     {
-      "Route": "images/products/coffeemaker.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\coffeemaker.jpg",
+      "Route": "images/products/product1.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1963,7 +2110,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5946"
+          "Value": "120396"
         },
         {
           "Name": "Content-Type",
@@ -1971,11 +2118,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=\""
+          "Value": "\"6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 05:25:20 GMT"
+          "Value": "Sat, 31 May 2025 04:14:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1985,13 +2132,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo="
+          "Value": "sha256-6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM="
         }
       ]
     },
     {
-      "Route": "images/products/coffeemaker.udhrqim7q3.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\coffeemaker.jpg",
+      "Route": "images/products/product1.xmz6kx96du.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2000,7 +2147,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5946"
+          "Value": "120396"
         },
         {
           "Name": "Content-Type",
@@ -2008,11 +2155,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=\""
+          "Value": "\"6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 05:25:20 GMT"
+          "Value": "Sat, 31 May 2025 04:14:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2022,21 +2169,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "udhrqim7q3"
+          "Value": "xmz6kx96du"
         },
         {
           "Name": "label",
-          "Value": "images/products/coffeemaker.jpg"
+          "Value": "images/products/product1.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo="
+          "Value": "sha256-6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM="
         }
       ]
     },
     {
-      "Route": "images/products/headphones.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\headphones.jpg",
+      "Route": "images/products/product10.7l68cncc2c.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product10.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2045,7 +2192,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5946"
+          "Value": "686486"
         },
         {
           "Name": "Content-Type",
@@ -2053,11 +2200,56 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=\""
+          "Value": "\"W9tfDjZnwhQnAnM6X40Jaf7vfP+GJB5G7Wf++n1g5aU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 05:25:20 GMT"
+          "Value": "Sat, 31 May 2025 04:16:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7l68cncc2c"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/product10.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W9tfDjZnwhQnAnM6X40Jaf7vfP+GJB5G7Wf++n1g5aU="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product10.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product10.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "686486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W9tfDjZnwhQnAnM6X40Jaf7vfP+GJB5G7Wf++n1g5aU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:16:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2067,13 +2259,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo="
+          "Value": "sha256-W9tfDjZnwhQnAnM6X40Jaf7vfP+GJB5G7Wf++n1g5aU="
         }
       ]
     },
     {
-      "Route": "images/products/headphones.udhrqim7q3.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\headphones.jpg",
+      "Route": "images/products/product11.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product11.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2082,7 +2274,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5946"
+          "Value": "120396"
         },
         {
           "Name": "Content-Type",
@@ -2090,56 +2282,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=\""
+          "Value": "\"6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 05:25:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "udhrqim7q3"
-        },
-        {
-          "Name": "label",
-          "Value": "images/products/headphones.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo="
-        }
-      ]
-    },
-    {
-      "Route": "images/products/powerbank.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\powerbank.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5946"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 05:25:20 GMT"
+          "Value": "Sat, 31 May 2025 04:08:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2149,13 +2296,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo="
+          "Value": "sha256-6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM="
         }
       ]
     },
     {
-      "Route": "images/products/powerbank.udhrqim7q3.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\powerbank.jpg",
+      "Route": "images/products/product11.xmz6kx96du.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product11.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2164,7 +2311,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5946"
+          "Value": "120396"
         },
         {
           "Name": "Content-Type",
@@ -2172,11 +2319,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=\""
+          "Value": "\"6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 05:25:20 GMT"
+          "Value": "Sat, 31 May 2025 04:08:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2186,21 +2333,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "udhrqim7q3"
+          "Value": "xmz6kx96du"
         },
         {
           "Name": "label",
-          "Value": "images/products/powerbank.jpg"
+          "Value": "images/products/product11.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo="
+          "Value": "sha256-6cE20FXjm2ITyaz3hg7Xoe5vVRXLoMoesjmigPFjGQM="
         }
       ]
     },
     {
-      "Route": "images/products/smartwatch.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\smartwatch.jpg",
+      "Route": "images/products/product12.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product12.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2209,7 +2356,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5946"
+          "Value": "284196"
         },
         {
           "Name": "Content-Type",
@@ -2217,11 +2364,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=\""
+          "Value": "\"X4CDUA0atlyZfg2o17HGy87SxCfYcCVRxFVuzuJcFB4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 05:25:20 GMT"
+          "Value": "Sat, 31 May 2025 04:15:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2231,13 +2378,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo="
+          "Value": "sha256-X4CDUA0atlyZfg2o17HGy87SxCfYcCVRxFVuzuJcFB4="
         }
       ]
     },
     {
-      "Route": "images/products/smartwatch.udhrqim7q3.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\smartwatch.jpg",
+      "Route": "images/products/product12.pud64wznix.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product12.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2246,7 +2393,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5946"
+          "Value": "284196"
         },
         {
           "Name": "Content-Type",
@@ -2254,11 +2401,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo=\""
+          "Value": "\"X4CDUA0atlyZfg2o17HGy87SxCfYcCVRxFVuzuJcFB4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 05:25:20 GMT"
+          "Value": "Sat, 31 May 2025 04:15:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2268,21 +2415,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "udhrqim7q3"
+          "Value": "pud64wznix"
         },
         {
           "Name": "label",
-          "Value": "images/products/smartwatch.jpg"
+          "Value": "images/products/product12.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Pm3d27AN1iWf/d/Nja+nmnt89S6lH2WzYjM4xhqTjRo="
+          "Value": "sha256-X4CDUA0atlyZfg2o17HGy87SxCfYcCVRxFVuzuJcFB4="
         }
       ]
     },
     {
-      "Route": "images/products/wallet.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\wallet.jpg",
+      "Route": "images/products/product13.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product13.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2291,7 +2438,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5137"
+          "Value": "234590"
         },
         {
           "Name": "Content-Type",
@@ -2299,11 +2446,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bUN5Kjmrv/7uk1KKc22vKpZ4EtGVVSRcEzJWQvijXdo=\""
+          "Value": "\"T54OUjSI0Tle0SAMKqjDvRsuqm5Lo7UuLauveaQxqCA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 09:06:51 GMT"
+          "Value": "Sat, 31 May 2025 04:17:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2313,13 +2460,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bUN5Kjmrv/7uk1KKc22vKpZ4EtGVVSRcEzJWQvijXdo="
+          "Value": "sha256-T54OUjSI0Tle0SAMKqjDvRsuqm5Lo7UuLauveaQxqCA="
         }
       ]
     },
     {
-      "Route": "images/products/wallet.z46i9hceaa.jpg",
-      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\wallet.jpg",
+      "Route": "images/products/product13.nqxuostzc5.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product13.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2328,7 +2475,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5137"
+          "Value": "234590"
         },
         {
           "Name": "Content-Type",
@@ -2336,11 +2483,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bUN5Kjmrv/7uk1KKc22vKpZ4EtGVVSRcEzJWQvijXdo=\""
+          "Value": "\"T54OUjSI0Tle0SAMKqjDvRsuqm5Lo7UuLauveaQxqCA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 09:06:51 GMT"
+          "Value": "Sat, 31 May 2025 04:17:04 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2350,20 +2497,594 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "z46i9hceaa"
+          "Value": "nqxuostzc5"
         },
         {
           "Name": "label",
-          "Value": "images/products/wallet.jpg"
+          "Value": "images/products/product13.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bUN5Kjmrv/7uk1KKc22vKpZ4EtGVVSRcEzJWQvijXdo="
+          "Value": "sha256-T54OUjSI0Tle0SAMKqjDvRsuqm5Lo7UuLauveaQxqCA="
         }
       ]
     },
     {
-      "Route": "js/site.51srjb989e.js",
+      "Route": "images/products/product2.59a18e7c2v.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "548583"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KVpliVAEk3QY+YjYSt3Dck8T0u0OL7iAgOcb0EDKmSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "59a18e7c2v"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/product2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KVpliVAEk3QY+YjYSt3Dck8T0u0OL7iAgOcb0EDKmSM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product2.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "548583"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KVpliVAEk3QY+YjYSt3Dck8T0u0OL7iAgOcb0EDKmSM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KVpliVAEk3QY+YjYSt3Dck8T0u0OL7iAgOcb0EDKmSM="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product3.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "297605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zbjkLzoPw1l36ddg7VPNWq1bEVGXTwfivRwfPxdMtTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:11:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zbjkLzoPw1l36ddg7VPNWq1bEVGXTwfivRwfPxdMtTI="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product3.l2nc9s6v7g.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "297605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zbjkLzoPw1l36ddg7VPNWq1bEVGXTwfivRwfPxdMtTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:11:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l2nc9s6v7g"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/product3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zbjkLzoPw1l36ddg7VPNWq1bEVGXTwfivRwfPxdMtTI="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product4.2jjwq04i66.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "490534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3kR8cLrTuz1/hk5dfjNc96YOqaoN8CbP9aHvGLLhmLY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:16:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2jjwq04i66"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/product4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3kR8cLrTuz1/hk5dfjNc96YOqaoN8CbP9aHvGLLhmLY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product4.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "490534"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3kR8cLrTuz1/hk5dfjNc96YOqaoN8CbP9aHvGLLhmLY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:16:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3kR8cLrTuz1/hk5dfjNc96YOqaoN8CbP9aHvGLLhmLY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product5.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167071"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kmmIA8vkzUsIEPfh2pyYXjhBLVuoLZtw+dw8JthSicw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:16:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kmmIA8vkzUsIEPfh2pyYXjhBLVuoLZtw+dw8JthSicw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product5.qeow602ly3.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "167071"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kmmIA8vkzUsIEPfh2pyYXjhBLVuoLZtw+dw8JthSicw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:16:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qeow602ly3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/product5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kmmIA8vkzUsIEPfh2pyYXjhBLVuoLZtw+dw8JthSicw="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product6.b7n7i5pfwd.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "406147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ybg1/Tw7D3CXFXZCHbPTo+CXMVYyA0YmPSrJUr4U+yA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:15:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b7n7i5pfwd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/product6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ybg1/Tw7D3CXFXZCHbPTo+CXMVYyA0YmPSrJUr4U+yA="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product6.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "406147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ybg1/Tw7D3CXFXZCHbPTo+CXMVYyA0YmPSrJUr4U+yA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:15:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ybg1/Tw7D3CXFXZCHbPTo+CXMVYyA0YmPSrJUr4U+yA="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product8.9dg8b22zok.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "656255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I+hhWZpi2KP5jPMcoHtMx5CQjPH8JaTA+6/CYNCtK7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:14:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9dg8b22zok"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/product8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I+hhWZpi2KP5jPMcoHtMx5CQjPH8JaTA+6/CYNCtK7g="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product8.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "656255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I+hhWZpi2KP5jPMcoHtMx5CQjPH8JaTA+6/CYNCtK7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:14:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I+hhWZpi2KP5jPMcoHtMx5CQjPH8JaTA+6/CYNCtK7g="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product9.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "524345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tgYMxtv7whH6QEG8G4PTVXMNAPHxYKbpMl2t9wZcjQo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:12:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tgYMxtv7whH6QEG8G4PTVXMNAPHxYKbpMl2t9wZcjQo="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/product9.yiyag3jw4a.jpg",
+      "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "524345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tgYMxtv7whH6QEG8G4PTVXMNAPHxYKbpMl2t9wZcjQo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 31 May 2025 04:12:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yiyag3jw4a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/product9.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tgYMxtv7whH6QEG8G4PTVXMNAPHxYKbpMl2t9wZcjQo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.cxi3454vo2.js",
       "AssetFile": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2373,7 +3094,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5487"
+          "Value": "5485"
         },
         {
           "Name": "Content-Type",
@@ -2381,11 +3102,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"V6p1eQz5gd+gZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc=\""
+          "Value": "\"cMU7sxtmbVbJTkcBGl9tWvwCTnZ3lvo/3MdZLjxat0Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 11:12:45 GMT"
+          "Value": "Sat, 31 May 2025 03:20:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2395,7 +3116,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "51srjb989e"
+          "Value": "cxi3454vo2"
         },
         {
           "Name": "label",
@@ -2403,7 +3124,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-V6p1eQz5gd+gZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc="
+          "Value": "sha256-cMU7sxtmbVbJTkcBGl9tWvwCTnZ3lvo/3MdZLjxat0Y="
         }
       ]
     },
@@ -2418,7 +3139,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5487"
+          "Value": "5485"
         },
         {
           "Name": "Content-Type",
@@ -2426,11 +3147,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"V6p1eQz5gd+gZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc=\""
+          "Value": "\"cMU7sxtmbVbJTkcBGl9tWvwCTnZ3lvo/3MdZLjxat0Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 30 May 2025 11:12:45 GMT"
+          "Value": "Sat, 31 May 2025 03:20:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2440,7 +3161,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-V6p1eQz5gd+gZU2bV1k0SwcU/SGkYB9miVxv0uPUKWc="
+          "Value": "sha256-cMU7sxtmbVbJTkcBGl9tWvwCTnZ3lvo/3MdZLjxat0Y="
         }
       ]
     },

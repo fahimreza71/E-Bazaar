@@ -17,17 +17,34 @@
                 <div class="form-control">
                     <label class="label" for="Name">
                         <span class="label-text text-custom-dark">Product Name</span>
+                        <span class="label-text-alt text-error">*</span>
                     </label>
-                    <input type="text" id="Name" name="Name" class="input input-bordered w-full" required />
-                    <span class="text-error text-sm" data-valmsg-for="Name"></span>
+                    <input type="text"
+                           id="Name"
+                           name="Name"
+                           class="input input-bordered w-full"
+                           required
+                           minlength="3"
+                           maxlength="100"
+                           asp-for="Name" />
+                    <span asp-validation-for="Name" class="text-error text-sm"></span>
                 </div>
 
                 <div class="form-control">
                     <label class="label" for="Price">
                         <span class="label-text text-custom-dark">Price ($)</span>
+                        <span class="label-text-alt text-error">*</span>
                     </label>
-                    <input type="number" id="Price" name="Price" class="input input-bordered w-full" required step="0.01" min="0" />
-                    <span class="text-error text-sm" data-valmsg-for="Price"></span>
+                    <input type="number"
+                           id="Price"
+                           name="Price"
+                           class="input input-bordered w-full"
+                           required
+                           step="0.01"
+                           min="0.01"
+                           max="999999.99"
+                           asp-for="Price" />
+                    <span asp-validation-for="Price" class="text-error text-sm"></span>
                 </div>
             </div>
 
@@ -36,17 +53,33 @@
                 <div class="form-control">
                     <label class="label" for="StockQuantity">
                         <span class="label-text text-custom-dark">Stock Quantity</span>
+                        <span class="label-text-alt text-error">*</span>
                     </label>
-                    <input type="number" id="StockQuantity" name="StockQuantity" class="input input-bordered w-full" required min="0" />
-                    <span class="text-error text-sm" data-valmsg-for="StockQuantity"></span>
+                    <input type="number"
+                           id="StockQuantity"
+                           name="StockQuantity"
+                           class="input input-bordered w-full"
+                           required
+                           min="0"
+                           max="999999"
+                           asp-for="StockQuantity" />
+                    <span asp-validation-for="StockQuantity" class="text-error text-sm"></span>
                 </div>
 
                 <div class="form-control">
                     <label class="label" for="DiscountPercentage">
                         <span class="label-text text-custom-dark">Discount (%)</span>
                     </label>
-                    <input type="number" id="DiscountPercentage" name="DiscountPercentage" class="input input-bordered w-full" min="0" max="100" step="1" />
-                    <span class="text-error text-sm" data-valmsg-for="DiscountPercentage"></span>
+                    <input type="number"
+                           id="DiscountPercentage"
+                           name="DiscountPercentage"
+                           class="input input-bordered w-full"
+                           value="0"
+                           min="0"
+                           max="100"
+                           step="1"
+                           asp-for="DiscountPercentage" />
+                    <span asp-validation-for="DiscountPercentage" class="text-error text-sm"></span>
                 </div>
             </div>
 
@@ -56,16 +89,28 @@
                     <label class="label" for="DiscountStart">
                         <span class="label-text text-custom-dark">Discount Start Date</span>
                     </label>
-                    <input type="date" id="DiscountStart" name="DiscountStart" class="input input-bordered w-full" />
-                    <span class="text-error text-sm" data-valmsg-for="DiscountStart"></span>
+                    <input type="date"
+                           id="DiscountStart"
+                           name="DiscountStart"
+                           class="input input-bordered w-full"
+                           min="@DateTime.Now.ToString("yyyy-MM-dd")"
+                           asp-for="@Model.DiscountStartDate"
+                           onchange="validateDiscountDates()" />
+                    <span asp-validation-for="@Model.DiscountStartDate" class="text-error text-sm"></span>
                 </div>
 
                 <div class="form-control">
                     <label class="label" for="DiscountEnd">
                         <span class="label-text text-custom-dark">Discount End Date</span>
                     </label>
-                    <input type="date" id="DiscountEnd" name="DiscountEnd" class="input input-bordered w-full" />
-                    <span class="text-error text-sm" data-valmsg-for="DiscountEnd"></span>
+                    <input type="date"
+                           id="DiscountEnd"
+                           name="DiscountEnd"
+                           class="input input-bordered w-full"
+                           min="@DateTime.Now.ToString("yyyy-MM-dd")"
+                           asp-for="@Model.DiscountEndDate"
+                           onchange="validateDiscountDates()" />
+                    <span asp-validation-for="@Model.DiscountEndDate" class="text-error text-sm"></span>
                 </div>
             </div>
 
@@ -73,9 +118,16 @@
             <div class="form-control">
                 <label class="label" for="Description">
                     <span class="label-text text-custom-dark">Description</span>
+                    <span class="label-text-alt text-error">*</span>
                 </label>
-                <textarea id="Description" name="Description" class="textarea textarea-bordered h-24 w-full" required></textarea>
-                <span class="text-error text-sm" data-valmsg-for="Description"></span>
+                <textarea id="Description"
+                          name="Description"
+                          class="textarea textarea-bordered h-24 w-full"
+                          required
+                          minlength="10"
+                          maxlength="500"
+                          asp-for="Description"></textarea>
+                <span asp-validation-for="Description" class="text-error text-sm"></span>
             </div>
 
             <!-- Modal Actions -->
@@ -89,5 +141,32 @@
 <script>
     function closeAddProductModal() {
         document.getElementById('AddProduct_modal').close();
+        document.getElementById('addProductForm').reset();
     }
+
+    function validateDiscountDates() {
+        const startDate = document.getElementById('DiscountStart').value;
+        const endDate = document.getElementById('DiscountEnd').value;
+
+        if (startDate && endDate && startDate > endDate) {
+            document.getElementById('DiscountEnd').setCustomValidity('End date must be after start date');
+        } else {
+            document.getElementById('DiscountEnd').setCustomValidity('');
+        }
+    }
+
+    // Add validation for discount percentage and dates
+    document.getElementById('DiscountPercentage').addEventListener('change', function() {
+        const discountValue = this.value;
+        const startDate = document.getElementById('DiscountStart');
+        const endDate = document.getElementById('DiscountEnd');
+
+        if (discountValue > 0) {
+            startDate.required = true;
+            endDate.required = true;
+        } else {
+            startDate.required = false;
+            endDate.required = false;
+        }
+    });
 </script> 

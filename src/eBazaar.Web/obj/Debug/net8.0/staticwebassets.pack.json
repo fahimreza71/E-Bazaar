@@ -17,24 +17,52 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\coffeemaker.jpg",
-      "PackagePath": "staticwebassets\\images\\products\\coffeemaker.jpg"
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product1.jpg"
     },
     {
-      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\headphones.jpg",
-      "PackagePath": "staticwebassets\\images\\products\\headphones.jpg"
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product10.jpg"
     },
     {
-      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\powerbank.jpg",
-      "PackagePath": "staticwebassets\\images\\products\\powerbank.jpg"
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product11.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product11.jpg"
     },
     {
-      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\smartwatch.jpg",
-      "PackagePath": "staticwebassets\\images\\products\\smartwatch.jpg"
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product12.jpg"
     },
     {
-      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\wallet.jpg",
-      "PackagePath": "staticwebassets\\images\\products\\wallet.jpg"
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product13.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product13.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product2.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product3.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product4.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product5.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product6.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product8.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product8.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\images\\products\\product9.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\product9.jpg"
     },
     {
       "Id": "D:\\Projects\\eBazaar\\src\\eBazaar.Web\\wwwroot\\js\\site.js",

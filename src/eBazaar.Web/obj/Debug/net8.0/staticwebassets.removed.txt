@@ -1,1 +1,6 @@
-D:\Projects\eBazaar\src\eBazaar.Web\wwwroot\images\placeholder.html
+D:\Projects\eBazaar\src\eBazaar.Web\wwwroot\images\products\coffeemaker.jpg
+D:\Projects\eBazaar\src\eBazaar.Web\wwwroot\images\products\headphones.jpg
+D:\Projects\eBazaar\src\eBazaar.Web\wwwroot\images\products\image-8.png
+D:\Projects\eBazaar\src\eBazaar.Web\wwwroot\images\products\powerbank.jpg
+D:\Projects\eBazaar\src\eBazaar.Web\wwwroot\images\products\smartwatch.jpg
+D:\Projects\eBazaar\src\eBazaar.Web\wwwroot\images\products\wallet.jpg
